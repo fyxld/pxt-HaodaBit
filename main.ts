@@ -264,7 +264,7 @@ namespace HaodaBit {
 	let pwmPeriod = 26;
     pins.analogWritePin(irLed, 0);
     pins.analogSetPeriod(irLed, pwmPeriod);
-	let BMP280_I2C_ADDR = BMP280_I2C_ADDRESS.ADDR_0x76;
+	let BMP280_I2C_ADDR = 0x76;
 	let initialized = false
 	
 	//% shim=HaodaBit::dht11Update
@@ -849,13 +849,13 @@ namespace HaodaBit {
 
     /**
      * set I2C address
-     */
+     
     //% blockId="BMP280_SET_ADDRESS" block="BMP280 set address %addr"
     //% weight=80
 	//% group="传感器" blockGap=8
     export function Address(addr: BMP280_I2C_ADDRESS) {
         BMP280_I2C_ADDR = addr
-    }
+    }*/
 	
 	
 	function MM32DDDD(): void {
