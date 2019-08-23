@@ -1060,7 +1060,7 @@ namespace HaodaBit {
          * Shows all LEDs to a given color (range 0-255 for r, g, b). 
          * @param rgb RGB color of the LED
          */
-        //% blockId="neopixel_set_strip_color" block="%strip|show color %rgb=neopixel_colors" 
+        //% blockId="HaodaBit_set_strip_color" block="%strip|show color %rgb=HaodaBit_colors" 
         //% weight=85 blockGap=8
         //% group="RGB"
         showColor(rgb: number) {
@@ -1078,7 +1078,7 @@ namespace HaodaBit {
          * @param pixeloffset position of the NeoPixel in the strip
          * @param rgb RGB color of the LED
          */
-        //% blockId="neopixel_set_pixel_color" block="%strip|set pixel color at %pixeloffset|to %rgb=neopixel_colors" 
+        //% blockId="HaodaBit_set_pixel_color" block="%strip|set pixel color at %pixeloffset|to %rgb=HaodaBit_colors" 
         //% blockGap=8
         //% weight=80
         //% group="RGB" 
@@ -1091,7 +1091,7 @@ namespace HaodaBit {
         /**
          * Send all the changes to the strip.
          */
-        //% blockId="neopixel_show" block="%strip|show" blockGap=8
+        //% blockId="HaodaBit_show" block="%strip|show" blockGap=8
         //% weight=79
         //% group="RGB"
         show() {
@@ -1102,7 +1102,7 @@ namespace HaodaBit {
          * Turn off all LEDs.
          * You need to call ``show`` to make the changes visible.
          */
-        //% blockId="neopixel_clear" block="%strip|clear" blockGap=8
+        //% blockId="HaodaBit_clear" block="%strip|clear" blockGap=8
         //% weight=76
         //% group="RGB"
         clear(): void {
@@ -1116,7 +1116,7 @@ namespace HaodaBit {
          * Set the brightness of the strip. This flag only applies to future operation.
          * @param brightness a measure of LED brightness in 0-255. eg: 255
          */
-        //% blockId="neopixel_set_brightness" block="%strip|set brightness %brightness" blockGap=8
+        //% blockId="HaodaBit_set_brightness" block="%strip|set brightness %brightness" blockGap=8
         //% weight=59
         //% group="RGB"
         setBrightness(brightness: number): void {
@@ -1131,7 +1131,7 @@ namespace HaodaBit {
          * @param length number of LEDs in the range. eg: 4
          */
         //% weight=89
-        //% blockId="neopixel_range" block="%strip|range from %start|with %length|leds" blockGap=8
+        //% blockId="HaodaBit_range" block="%strip|range from %start|with %length|leds" blockGap=8
         //% group="RGB"
         //% blockSetVariable=range
         range(start: number, length: number): Strip {
@@ -1250,7 +1250,7 @@ namespace HaodaBit {
      * @param pin the pin where the neopixel is connected.
      * @param numleds number of leds in the strip, eg: 24,30,60,64
      */
-    //% blockId="neopixel_create" block="NeoPixel at pin %pin|with %numleds|leds"
+    //% blockId="HaodaBit_create" block="NeoPixel at pin %pin|with %numleds|leds"
     //% weight=90 blockGap=8
     //% group="RGB"
     //% trackArgs=0,2
@@ -1276,7 +1276,7 @@ namespace HaodaBit {
      * @param blue value of the blue channel between 0 and 255. eg: 255
      */
     //% weight=1 blockGap=8
-    //% blockId="neopixel_rgb" block="red %red|green %green|blue %blue"
+    //% blockId="HaodaBit_rgb" block="red %red|green %green|blue %blue"
 	//% group="RGB"
 
     export function rgb(red: number, green: number, blue: number): number {
@@ -1287,7 +1287,7 @@ namespace HaodaBit {
      * Gets the RGB value of a known color
     */
     //% weight=2 blockGap=8
-    //% blockId="neopixel_colors" block="%color"
+    //% blockId="HaodaBit_colors" block="%color"
 	//% group="RGB"
     export function colors(color: NeoPixelColors): number {
         return color;
