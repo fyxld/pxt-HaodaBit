@@ -4,13 +4,13 @@
     "description": "Extension for HaodaBit",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "neopixel": "github:kittenbot/pxt-neopixel#v0.6.13"
+        "core": "*"
     },
     "files": [
         "README.md",
         "main.ts",
 		"main.cpp",
+		"sendBuffer.asm",
         "_locales/zh/HaodaBit-strings.json"
     ],
     "testFiles": [
