@@ -1136,8 +1136,7 @@ namespace HaodaBit {
         //% blockId="HaodaBit_range" block="%strip|range from %start|with %length|leds" blockGap=8
         //% group="RGB"
         //% blockSetVariable=range
-        range(start1: number, length: number): Strip {
-			start = start1 + 1 ;
+        range(start: number, length: number): Strip {
             start = start >> 0;
             length = length >> 0;
             let strip = new Strip();
