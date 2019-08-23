@@ -5,7 +5,7 @@
 	"HaodaBit.DHT11Type.TemperatureF|block": "温度(°F)",
 	"HaodaBit.DHT11Type.Humidity|block": "湿度",
 	"HaodaBit.PrevNext.play|block": "播放",
-	"HaodaBit.PrevNext.stop|block": "停止",
+	"HaodaBit.PrevNext.stop|block": "暂停",
 	"HaodaBit.PrevNext.next|block": "下一首",
 	"HaodaBit.PrevNext.prev|block": "上一首",
 	"HaodaBit.Creadcolor.RR|block": "R值",
