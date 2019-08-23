@@ -1083,8 +1083,7 @@ namespace HaodaBit {
         //% weight=80
         //% group="RGB" 
         setPixelColor(pixeloffset: number, rgb: number): void {
-			let pixeloffsettt = pixeloffset + 1;
-            this.setPixelRGB(pixeloffsettt >> 0, rgb >> 0);
+            this.setPixelRGB(pixeloffset >> 0, rgb >> 0);
         }
 
 
