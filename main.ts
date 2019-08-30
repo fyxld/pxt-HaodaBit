@@ -1083,6 +1083,7 @@ namespace HaodaBit {
         //% weight=80
         //% group="RGB" 
         setPixelColor(pixeloffset: number, rgb: number): void {
+		    let pixelrgb = pixeloffset - 1;
             this.setPixelRGB(pixeloffset >> 0, rgb >> 0);
         }
 
@@ -1135,7 +1136,8 @@ namespace HaodaBit {
         //% blockId="HaodaBit_range" block="%strip|range from %start|with %length|leds" blockGap=8
         //% group="RGB"
         //% blockSetVariable=range
-        range(start: number, length: number): Strip {
+        range(pixelnums: number, length: number): Strip {
+		    let start = pixelnums - 1;
             start = start >> 0;
             length = length >> 0;
             let strip = new Strip();
