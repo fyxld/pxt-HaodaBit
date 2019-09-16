@@ -1,7 +1,4 @@
 /*
-Riven
-modified from pxt-servo/servodriver.ts
-load dependency
 "HaodaBit": "file:../pxt-HaodaBit"
 */
 /**
