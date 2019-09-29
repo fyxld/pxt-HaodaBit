@@ -1369,7 +1369,7 @@ namespace HaodaBit {
 
     /**
      * show a number in display
-     * @param num is number will be shown, eg: 100
+     * @param num is number will be shown, eg: 1234
      */
     //% blockId="HaodaBit_TM650_SHOW_NUMBER" block="4DigitDisplay show number %num"
     //% weight=100 blockGap=8
