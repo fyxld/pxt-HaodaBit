@@ -1406,7 +1406,7 @@ namespace HaodaBit {
             }
 
             if (numhu > 0) {
-                digit_digit(numth, 2)
+                digit_digit(numhu, 2)
             }
             /** 
         digit1(Math.idiv(num, 1000) % 10, 0)
