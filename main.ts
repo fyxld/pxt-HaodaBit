@@ -1367,6 +1367,15 @@ namespace HaodaBit {
         dat(bit, _SEG[num % 16])
     }
 
+     function digit_on() {
+         cmd(_intensity * 16 + 1)
+     }
+
+     function digit_off() {
+         _intensity = 0
+         cmd(0)
+     }
+
     /**
      * show a number in display
      * @param num is number will be shown, eg: 1234
@@ -1400,5 +1409,7 @@ namespace HaodaBit {
         if (show) dat(baep, dbuf[baep % 4] | 0x80)
         else dat(baep, dbuf[baep % 4] & 0x7F)
     }
+    digit_on();
+
 
 }
