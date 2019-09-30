@@ -1367,6 +1367,15 @@ namespace HaodaBit {
         dat(bit, _SEG[num % 16])
     }
 
+     function digit_on() {
+         cmd(_intensity * 16 + 1)
+     }
+
+     function digit_off() {
+         _intensity = 0
+         cmd(0)
+     }
+
     /**
      * show a number in display
      * @param num is number will be shown, eg: 1234
@@ -1379,11 +1388,33 @@ namespace HaodaBit {
             dat(0, 0x40) // '-'
             num = -num
         }
-        else
-            digit1(Math.idiv(num, 1000) % 10, 0)
+        else {
+            let numth = Math.idiv(num, 1000) % 10
+            let numnn = num % 10
+            let numte = Math.idiv(num, 10) % 10
+            let numhu = Math.idiv(num, 100) % 10
+            if(numth > 0){
+                digit_digit(numth, 1)
+            }
+
+            if (numnn > 0) {
+                digit_digit(numnn, 4)
+            }
+
+            if (numte > 0) {
+                digit_digit(numte, 3)
+            }
+
+            if (numhu > 0) {
+                digit_digit(numth, 2)
+            }
+            /** 
+        digit1(Math.idiv(num, 1000) % 10, 0)
         digit1(num % 10, 3)
         digit1(Math.idiv(num, 10) % 10, 2)
         digit1(Math.idiv(num, 100) % 10, 1)
+        */
+        }
     }
 
 
@@ -1400,5 +1431,7 @@ namespace HaodaBit {
         if (show) dat(baep, dbuf[baep % 4] | 0x80)
         else dat(baep, dbuf[baep % 4] & 0x7F)
     }
+    digit_on();
+
 
 }
