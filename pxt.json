@@ -9,8 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-		"main.cpp",
-		"sendBuffer.asm",
+        "main.cpp",
+        "sendBuffer.asm",
         "_locales/zh/HaodaBit-strings.json"
     ],
     "testFiles": [
