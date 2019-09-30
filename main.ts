@@ -4,7 +4,7 @@
 /**
 //% groups='["传感器", "显示", "执行","红外","音乐","RGB"]'
 */
-//% weight=10 color=#006000 icon="\uf0a4" block="HaodaBit"
+//% weight=20 color=#006000 icon="\uf0a4" block="HaodaBit"
 
 namespace HaodaBit {
     const MM32_ADDRESS = 0x40
