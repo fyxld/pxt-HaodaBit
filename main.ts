@@ -601,7 +601,7 @@ namespace HaodaBit {
 
         let port = PortAnalog[pin]
 
-        let value = (0.6 + degree / 75) * 500
+        let value = (0.6 + degree / 100) * 1000
         pins.servoSetPulse(port, value)
     }
 	
