@@ -38,7 +38,7 @@
 	"HaodaBit.MP3Play|block": "MP3 |%pn",
 	"HaodaBit.MP3Volumn|block": "MP3 播放音量|%volumn",
 	"HaodaBit.MP3PlayIndex|block": "MP3 播放曲目|%index",
-	"HaodaBit.servo|block": "设置舵机|%pin|角度为（0°~270°）|%degree",
+	"HaodaBit.servo|block": "设置舵机|%pin|角度为（0~270°）|%degree",
 	"HaodaBit.server_lm35|block": "读取LM35温度在|%pin",
 	"HaodaBit.H_TCS34725|block": "读取颜色传感器 %pn",
 	"HaodaBit.pressure|block": "BMP280 获取气压值",
