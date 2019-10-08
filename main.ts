@@ -594,14 +594,14 @@ namespace HaodaBit {
 	
 	//% blockId=HaodaBit_motor_servo block="Servo|%pin|degree|%degree"
     //% weight=100 blockGap=8
-    //% degree.min=0 degree.max=180
+    //% degree.min=0 degree.max=270
     //% group="执行" name.fieldEditor="gridpicker" name.fieldOptions.columns=4
 	
     export function servo(pin: Ports, degree: number): void {
 
         let port = PortAnalog[pin]
 
-        let value = (0.6 + degree / 100) * 1000
+        let value = (0.6 + degree / 150) * 1000
         pins.servoSetPulse(port, value)
     }
 	
