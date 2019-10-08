@@ -600,10 +600,8 @@ namespace HaodaBit {
     export function servo(pin: Ports, degree: number): void {
 
         let port = PortAnalog[pin]
-		let v_us = ((degree - 90) * 20 / 3 + 1500) // 0.6 ~ 2.4
-        let value = v_us * 4096 / 20000
 
-       /** let value = (0.5 + degree / 90) * 1000*/
+        let value = (degree / 90) * 1000
         pins.servoSetPulse(port, value)
     }
 	
