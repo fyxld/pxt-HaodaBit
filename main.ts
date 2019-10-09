@@ -605,7 +605,7 @@ namespace HaodaBit {
         pins.servoSetPulse(port, value)
     }
 
-    //% blockId=HaodaBit_motor_servo block="tone|%pin|frequency|%fre"
+    //% blockId=HaodaBit_tone block="tone|%pin|frequency|%fre"
     //% weight=100 blockGap=8
     //% group="执行"
 
