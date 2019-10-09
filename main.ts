@@ -212,6 +212,51 @@ namespace HaodaBit {
     export enum encodingType {
         NEC
     }
+
+    export enum freequ{
+        //% block= "低1DO"
+        dd1 = 262,
+        //% block= "低2RE"
+        dd2 = 294,
+        //% block= "低3MI"
+        dd3 = 330,
+        //% block= "低4FA"
+        dd4 = 349,
+        //% block= "低5SO"
+        dd5 = 392,
+        //% block= "低6LA"
+        dd6 = 440,
+        //% block= "低7XI"
+        dd7 = 494,
+        //% block= "中1DO"
+        dd8 = 523,
+        //% block= "中2RE"
+        dd9 = 587,
+        //% block= "中3MI"
+        dd10 = 659,
+        //% block= "中4FA"
+        dd11 = 698,
+        //% block= "中5SO"
+        dd12 = 784,
+        //% block= "中6LA"
+        dd13 = 880,
+        //% block= "中7XI"
+        dd14 = 988,
+        //% block= "高1DO"
+        dd15 = 1046,
+        //% block= "高2RE"
+        dd16 = 1175,
+        //% block= "高3MI"
+        dd17 = 1318,
+        //% block= "高4FA"
+        dd18 = 1397,
+        //% block= "高5SO"
+        dd19 = 1568,
+        //% block= "高6LA"
+        dd20 = 1760,
+        //% block= "高7XI"
+        dd21 = 1967
+    }
 	
 	export enum BMP280_I2C_ADDRESS{
     //% block="0x76"
@@ -615,6 +660,28 @@ namespace HaodaBit {
         pins.analogWritePin(port, 512)
         pins.analogSetPeriod(port, value)
         
+    }
+
+    //% blockId=HaodaBit_toneoff block="tone off at|%pin"
+    //% weight=100 blockGap=8
+    //% group="执行"
+
+    export function toneoff(pin: Ports) {
+        let port = PortAnalog[pin]
+        pins.analogWritePin(port, 0)
+
+    }
+
+    //% blockId=HaodaBit_tonemus block="tone|%pin|play|%fre"
+    //% weight=100 blockGap=8
+    //% group="执行"
+
+    export function tonemus(pin: Ports, fre: freequ) {
+        let port = PortAnalog[pin]
+        let value = (1 / fre) * 1000000
+        pins.analogWritePin(port, 512)
+        pins.analogSetPeriod(port, value)
+
     }
 	
 	//% blockId=HaodaBit_LM35_server block="read lm35|port %pin"
