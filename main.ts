@@ -604,6 +604,15 @@ namespace HaodaBit {
         let value = (0.6 + degree / 150) * 1000
         pins.servoSetPulse(port, value)
     }
+
+    //% blockId=HaodaBit_motor_servo block="tone|%pin|frequency|%fre"
+    //% weight=100 blockGap=8
+    //% group="执行"
+
+    export function tone(pin:Ports,fre:number){
+        let port = PortDigital[pin]
+        music.playTone(fre, port)
+    }
 	
 	//% blockId=HaodaBit_LM35_server block="read lm35|port %pin"
     //% weight=100
