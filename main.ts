@@ -214,47 +214,47 @@ namespace HaodaBit {
     }
 
     export enum freequ{
-        //% block= "低1DO"
+        //% block="低1DO"
         dd1 = 262,
-        //% block= "低2RE"
+        //% block="低2RE"
         dd2 = 294,
-        //% block= "低3MI"
+        //% block="低3MI"
         dd3 = 330,
-        //% block= "低4FA"
+        //% block="低4FA"
         dd4 = 349,
-        //% block= "低5SO"
+        //% block="低5SO"
         dd5 = 392,
-        //% block= "低6LA"
+        //% block="低6LA"
         dd6 = 440,
-        //% block= "低7XI"
+        //% block="低7XI"
         dd7 = 494,
-        //% block= "中1DO"
+        //% block="中1DO"
         dd8 = 523,
-        //% block= "中2RE"
+        //% block="中2RE"
         dd9 = 587,
-        //% block= "中3MI"
+        //% block="中3MI"
         dd10 = 659,
-        //% block= "中4FA"
+        //% block="中4FA"
         dd11 = 698,
-        //% block= "中5SO"
+        //% block="中5SO"
         dd12 = 784,
-        //% block= "中6LA"
+        //% block="中6LA"
         dd13 = 880,
-        //% block= "中7XI"
+        //% block="中7XI"
         dd14 = 988,
-        //% block= "高1DO"
+        //% block="高1DO"
         dd15 = 1046,
-        //% block= "高2RE"
+        //% block="高2RE"
         dd16 = 1175,
-        //% block= "高3MI"
+        //% block="高3MI"
         dd17 = 1318,
-        //% block= "高4FA"
+        //% block="高4FA"
         dd18 = 1397,
-        //% block= "高5SO"
+        //% block="高5SO"
         dd19 = 1568,
-        //% block= "高6LA"
+        //% block="高6LA"
         dd20 = 1760,
-        //% block= "高7XI"
+        //% block="高7XI"
         dd21 = 1967
     }
 	
@@ -649,7 +649,10 @@ namespace HaodaBit {
         let value = (0.6 + degree / 150) * 1000
         pins.servoSetPulse(port, value)
     }
-
+	
+	/**
+     * @param fre is position, eg: 523
+     */
     //% blockId=HaodaBit_tone block="tone|%pin|frequency|%fre"
     //% weight=100 blockGap=8
     //% group="执行"
