@@ -1,4 +1,4 @@
-/*
+pins.analogSetPeriod(AnalogPin.P0, 10000)/*
 "HaodaBit": "file:../pxt-HaodaBit"
 */
 /**
@@ -610,8 +610,11 @@ namespace HaodaBit {
     //% group="执行"
 
     export function tone(pin:Ports,fre:number){
-        let port = PortDigital[pin]
-        music.playTone(fre, port)
+        let port = PortAnalog[pin]
+        let value = (1 / fre) * 1000000
+        pins.analogWritePin(port, 512)
+        pins.analogSetPeriod(port, value)
+        
     }
 	
 	//% blockId=HaodaBit_LM35_server block="read lm35|port %pin"
