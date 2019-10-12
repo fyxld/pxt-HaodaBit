@@ -64,5 +64,7 @@
     "HaodaBit.digit_digit|block": "数码管显示数字 %num|在第 %bit|位",
     "HaodaBit.digit_showNumber|block": "数码管显示数字 %num",
     "HaodaBit.digit_showDpAt|block": "数码管小数点第 %bit|位 显示 %num",
-    "HaodaBit.tone|block": "设置蜂鸣器|%pin|响起频率|%fre|Hz"
+    "HaodaBit.tone|block": "设置蜂鸣器|%pin|响起频率|%fre|Hz",
+    "HaodaBit.toneoff|block": "关闭蜂鸣器在|%pin",
+    "HaodaBit.tonemus|block": "设置蜂鸣器|%pin|音调为|%fre"
 }
