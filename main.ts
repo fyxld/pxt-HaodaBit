@@ -1477,6 +1477,26 @@ namespace HaodaBit {
             let numhu = Math.idiv(num, 100) % 10
             if(numth > 0){
                 digit_digit(numth, 1)
+                digit_digit(numhu, 2)
+                digit_digit(numte, 3)
+                digit_digit(numnn, 4)
+
+            }
+            else if(numth = 0 && numhu > 0){
+                digit_digit(numhu, 2)
+                digit_digit(numte, 3)
+                digit_digit(numnn, 4)
+            }
+            else if(numth = 0 && numhu <= 0 && numte > 0){
+                digit_digit(numte, 3)
+                digit_digit(numnn, 4)
+            }
+            else if (numth = 0 && numhu <= 0 && numte <= 0 && numnn >= 0){
+                digit_digit(numnn, 4)
+
+            }
+            /**  if(numth > 0){
+                digit_digit(numth, 1)
             }
 
             if (numnn > 0) {
@@ -1490,7 +1510,7 @@ namespace HaodaBit {
             if (numhu > 0) {
                 digit_digit(numhu, 2)
             }
-            /** 
+           
         digit1(Math.idiv(num, 1000) % 10, 0)
         digit1(num % 10, 3)
         digit1(Math.idiv(num, 10) % 10, 2)
