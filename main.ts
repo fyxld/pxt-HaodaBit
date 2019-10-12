@@ -47,16 +47,16 @@ namespace HaodaBit {
 
     const BYG_CHD_L = 2047
     const BYG_CHD_H = 4095
-	
-	
-	const TCS34725IntegrationTime = 0xEB
+
+
+    const TCS34725IntegrationTime = 0xEB
     const TCS34725Gain = 0x01
     const TCS34725_COMMAND_BIT = 0x80
     const TCS34725_ADDRESS = 0x29
-	
-	const N76E003AT20_ADDRESS = 0x52
-	const N76E003AT20_DATA1 = 0x16
-	const N76E003AT20_DATA2 = 0x08
+
+    const N76E003AT20_ADDRESS = 0x52
+    const N76E003AT20_DATA1 = 0x16
+    const N76E003AT20_DATA2 = 0x08
 
     // Auto-generated. Do not edit.
 
@@ -71,9 +71,9 @@ namespace HaodaBit {
         DigitalPin.P16
 
     ]
-	
-	
-	const PortAnalog = [
+
+
+    const PortAnalog = [
         AnalogPin.P0,
         AnalogPin.P1,
         AnalogPin.P2,
@@ -101,9 +101,9 @@ namespace HaodaBit {
         P16 = 5
 
     }
-	
-	
-	export enum Ports1 {
+
+
+    export enum Ports1 {
         P0 = 0,
         P1 = 1,
         P2 = 2
@@ -111,8 +111,8 @@ namespace HaodaBit {
 
     }
 
-	
-	export enum DHT11Type {
+
+    export enum DHT11Type {
         //% block=temperature(°C)
         TemperatureC = 0,
         //% block=temperature(°F)
@@ -120,8 +120,8 @@ namespace HaodaBit {
         //% block=humidity
         Humidity = 2
     }
-	
-	export enum linechoose {
+
+    export enum linechoose {
         //% block=R1
         R1 = 0x19,
         //% block=R2
@@ -131,8 +131,8 @@ namespace HaodaBit {
         //% block=L2
         L2 = 0x13
     }
-	
-	export enum linechooseAD {
+
+    export enum linechooseAD {
         //% block=R1
         R1 = 0x07,
         //% block=R2
@@ -142,8 +142,8 @@ namespace HaodaBit {
         //% block=L2
         L2 = 0x03
     }
-	
-	export enum linechoosedb {
+
+    export enum linechoosedb {
         //% block=R1
         R1 = 0x0f,
         //% block=R2
@@ -153,8 +153,8 @@ namespace HaodaBit {
         //% block=L2
         L2 = 0x0b
     }
-	
-	export enum PrevNext {
+
+    export enum PrevNext {
         //% block=play
         play = 0x0d,
         //% block=stop
@@ -164,8 +164,8 @@ namespace HaodaBit {
         //% block=prev
         prev = 0x02
     }
-	
-	export enum Creadcolor {
+
+    export enum Creadcolor {
         //% block=red
         RR = 0,
         //% block=green
@@ -173,47 +173,47 @@ namespace HaodaBit {
         //% block=blue
         BB = 2
     }
-	
+
 	/**
      * Different modes for RGB or RGB+W NeoPixel strips
      */
     export enum NeoPixelMode {
-    //% block="RGB (GRB format)"
-    RGB = 0,
-    //% block="RGB+W"
-    RGBW = 1,
-    //% block="RGB (RGB format)"
-    RGB_RGB = 2
-}
-	
-	export enum NeoPixelColors {
-    //% block=red
-    Red = 0xFF0000,
-    //% block=orange
-    Orange = 0xFFA500,
-    //% block=yellow
-    Yellow = 0xFFFF00,
-    //% block=green
-    Green = 0x00FF00,
-    //% block=blue
-    Blue = 0x0000FF,
-    //% block=indigo
-    Indigo = 0x4b0082,
-    //% block=violet
-    Violet = 0x8a2be2,
-    //% block=purple
-    Purple = 0xFF00FF,
-    //% block=white
-    White = 0xFFFFFF,
-    //% block=black
-    Black = 0x000000
-}
-	
+        //% block="RGB (GRB format)"
+        RGB = 0,
+        //% block="RGB+W"
+        RGBW = 1,
+        //% block="RGB (RGB format)"
+        RGB_RGB = 2
+    }
+
+    export enum NeoPixelColors {
+        //% block=red
+        Red = 0xFF0000,
+        //% block=orange
+        Orange = 0xFFA500,
+        //% block=yellow
+        Yellow = 0xFFFF00,
+        //% block=green
+        Green = 0x00FF00,
+        //% block=blue
+        Blue = 0x0000FF,
+        //% block=indigo
+        Indigo = 0x4b0082,
+        //% block=violet
+        Violet = 0x8a2be2,
+        //% block=purple
+        Purple = 0xFF00FF,
+        //% block=white
+        White = 0xFFFFFF,
+        //% block=black
+        Black = 0x000000
+    }
+
     export enum encodingType {
         NEC
     }
 
-    export enum freequ{
+    export enum freequ {
         //% block="低1DO"
         dd1 = 262,
         //% block="低2RE"
@@ -257,15 +257,15 @@ namespace HaodaBit {
         //% block="高7XI"
         dd21 = 1967
     }
-	
-	export enum BMP280_I2C_ADDRESS{
-    //% block="0x76"
-    ADDR_0x76 = 0x76,
-    //% block="0x77"
-    ADDR_0x77 = 0x77
-   }
-   
-   export enum Motors {
+
+    export enum BMP280_I2C_ADDRESS {
+        //% block="0x76"
+        ADDR_0x76 = 0x76,
+        //% block="0x77"
+        ADDR_0x77 = 0x77
+    }
+
+    export enum Motors {
         //%blockId=HaodaBit_motordriver_motor_one
         //% block="MA"
         MA = 0x1,
@@ -273,15 +273,15 @@ namespace HaodaBit {
         //% block="MB"
         MB = 0x2
     }
-	
-   export enum Dir {
+
+    export enum Dir {
         //% blockId="CW" block="CW"
         CW = 1,
         //% blockId="CCW" block="CCW"
         CCW = -1,
     }
-	
-	export enum Buttondd {
+
+    export enum Buttondd {
         //% block=0
         IR_BUTTON_0 = 0x4f,
         //% block=1
@@ -318,11 +318,11 @@ namespace HaodaBit {
         IR_BUTTON_POUND = 0x8f
 
     }
-	
-	 /**
-     * send command to display
-     * @param is command, eg: 0
-     */
+
+    /**
+    * send command to display
+    * @param is command, eg: 0
+    */
     function cmd(c: number) {
         pins.i2cWriteNumber(COMMAND_I2C_ADDRESS, c, NumberFormat.Int8BE)
     }
@@ -336,12 +336,12 @@ namespace HaodaBit {
     }
 
 
-	let distanceBuf = 0;
-	let alreadyInit = 0;
-	let dht11Temp = -1;
+    let distanceBuf = 0;
+    let alreadyInit = 0;
+    let dht11Temp = -1;
     let dht11Humi = -1;
-	let tcs34725Initialised = false
-	let tempHandler: Action;
+    let tcs34725Initialised = false
+    let tempHandler: Action;
     let send_init = false;
     let rec_init = false;
     let arr: number[] = []
@@ -353,27 +353,27 @@ namespace HaodaBit {
     let recPin = DigitalPin.P8
     let thereIsHandler = false
     arr = []
-	let irLed = AnalogPin.P16;
-	let pwmPeriod = 26;
+    let irLed = AnalogPin.P16;
+    let pwmPeriod = 26;
     pins.analogWritePin(irLed, 0);
     pins.analogSetPeriod(irLed, pwmPeriod);
-	let BMP280_I2C_ADDR = 0x76;
-	let initialized = false
-	
-	let COMMAND_I2C_ADDRESS = 0x24
+    let BMP280_I2C_ADDR = 0x76;
+    let initialized = false
+
+    let COMMAND_I2C_ADDRESS = 0x24
     let DISPLAY_I2C_ADDRESS = 0x34
     let _SEG = [0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F, 0x77, 0x7C, 0x39, 0x5E, 0x79, 0x71];
 
     let _intensity = 3
     let dbuf = [0, 0, 0, 0]
-	
-	//% shim=HaodaBit::dht11Update
+
+    //% shim=HaodaBit::dht11Update
     function dht11Update(pin: number): number {
         return 999;
     }
 
-	
-	function i2cWrite(addr: number, reg: number, value: number) {
+
+    function i2cWrite(addr: number, reg: number, value: number) {
         let buf = pins.createBuffer(2)
         buf[0] = reg
         buf[1] = value
@@ -421,16 +421,16 @@ namespace HaodaBit {
 
         return Math.floor(ret * 10 / 6 / 58);
     }
-	
-	
-	   /**
-     *  set the IR receiver pin.
-     */
+
+
+    /**
+  *  set the IR receiver pin.
+  */
     //% blockId=setREC_pin block="set IR receiver pin: %myPin" 
     //% weight=85 
-	//% group="红外" blockGap=8
+    //% group="红外" blockGap=8
     export function setREC_pin(myPin: Ports) {
-		let portaa = PortDigital[myPin]
+        let portaa = PortDigital[myPin]
         recPin = portaa;
         pins.setEvents(recPin, PinEventType.Pulse)
         pins.setPull(recPin, PinPullMode.PullUp)
@@ -443,8 +443,8 @@ namespace HaodaBit {
         control.onEvent(recPin, DAL.MICROBIT_PIN_EVENT_ON_TOUCH, tempHandler);
         rec_init = true;
     }
-	
-	 function resetReceiver() {
+
+    function resetReceiver() {
         arr = []
         received = false
     }
@@ -520,7 +520,7 @@ namespace HaodaBit {
      */
     //% blockId=onReceivedIR block="on IR message received" blockInlineInputs=true
     //% weight=70 
-	//% group="红外" blockGap=8
+    //% group="红外" blockGap=8
     export function onReceivedIR(handler: Action): void {
         tempHandler = handler
         thereIsHandler = true
@@ -532,22 +532,22 @@ namespace HaodaBit {
      */
     //% blockId=getMessage block="read IR"
     //% weight=60 
-	//% group="红外" blockGap=8
+    //% group="红外" blockGap=8
     export function getMessage(): number {
 
         return command1
     }
-	
+
 
     //% blockId=IR_KEY block="IR buttons| %readkey"
     //% weight=100
-	//% group="红外" blockGap=8
+    //% group="红外" blockGap=8
     export function key_read(readkey: Buttondd): number {
         return readkey;
     }
-	
-	
-	//% blockId=HaodaBit_dht11 block="DHT11|port %port|type %readtype"
+
+
+    //% blockId=HaodaBit_dht11 block="DHT11|port %port|type %readtype"
     //% weight=60
     //% group="传感器" blockGap=8
     export function DHT11(readtype: DHT11Type, port: Ports1): number {
@@ -572,12 +572,12 @@ namespace HaodaBit {
 
 
     }
-	
-	
-	//% blockId=HaodaBit_mp3_connect block="MP3 init|port %port"
+
+
+    //% blockId=HaodaBit_mp3_connect block="MP3 init|port %port"
     //% weight=39
-	//% group="音乐" blockGap=8
-	
+    //% group="音乐" blockGap=8
+
     export function MP3Connect(port: Ports): void {
         let pin = PortSerial[port]
         // todo: fiber may freeze on steam reading
@@ -585,7 +585,7 @@ namespace HaodaBit {
     }
 
     //% blockId=HaodaBit_mp3_play block="MP3 |%pn"
-	//% weight=39
+    //% weight=39
     //% group="音乐" blockGap=8
     export function MP3Play(pn: PrevNext): void {
         let buf = pins.createBuffer(8);
@@ -636,12 +636,12 @@ namespace HaodaBit {
         buf[7] = 0xef;
         serial.writeBuffer(buf)
     }
-	
-	//% blockId=HaodaBit_motor_servo block="Servo|%pin|degree|%degree"
+
+    //% blockId=HaodaBit_motor_servo block="Servo|%pin|degree|%degree"
     //% weight=100 blockGap=8
     //% degree.min=0 degree.max=270
     //% group="执行" name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-	
+
     export function servo(pin: Ports, degree: number): void {
 
         let port = PortAnalog[pin]
@@ -649,7 +649,7 @@ namespace HaodaBit {
         let value = (0.6 + degree / 150) * 1000
         pins.servoSetPulse(port, value)
     }
-	
+
 	/**
      * @param fre is position, eg: 523
      */
@@ -657,12 +657,12 @@ namespace HaodaBit {
     //% weight=100 blockGap=8
     //% group="执行"
 
-    export function tone(pin:Ports,fre:number){
+    export function tone(pin: Ports, fre: number) {
         let port = PortAnalog[pin]
         let value = (1 / fre) * 1000000
         pins.analogWritePin(port, 512)
         pins.analogSetPeriod(port, value)
-        
+
     }
 
     //% blockId=HaodaBit_toneoff block="tone off at|%pin"
@@ -686,8 +686,8 @@ namespace HaodaBit {
         pins.analogSetPeriod(port, value)
 
     }
-	
-	//% blockId=HaodaBit_LM35_server block="read lm35|port %pin"
+
+    //% blockId=HaodaBit_LM35_server block="read lm35|port %pin"
     //% weight=100
     //% group="传感器" blockGap=8
     export function server_lm35(pin: Ports1): number {
@@ -697,9 +697,9 @@ namespace HaodaBit {
         let value = (82.5 * vas) >> 8
         return value;
     }
-	
-	
-	function TCS34725_setIntegrationTime() {
+
+
+    function TCS34725_setIntegrationTime() {
         if (!tcs34725Initialised) { TCS34725_begin(); }
 
         /* Update the timing register */
@@ -781,7 +781,7 @@ namespace HaodaBit {
             return 0;
         }
     }
-	
+
 
 
     //% blockId=HaodaBit_TCS34725 block="read color|port %pn"
@@ -791,16 +791,16 @@ namespace HaodaBit {
         let num = TCS34725_readRGBC(pn);
         return num;
     }
-	
-	
+
+
     function transmitBit(highTime: number, lowTime: number): void {
         pins.analogWritePin(irLed, 512);
         control.waitMicros(highTime);
         pins.analogWritePin(irLed, 0);
         control.waitMicros(lowTime);
     }
-	
-	
+
+
 
     function encode(myCode: number, bits: number, trueHigh: number, trueLow: number, falseHigh: number, falseLow: number): void {
         const MESSAGE_BITS = bits;
@@ -850,38 +850,38 @@ namespace HaodaBit {
             default: sendNEC(message, times);
         }
     }
-	    
+
     /**
      *  set the infrared LED pin.
      */
     //% blockId=HaodaBit_setIR_pin block="set IR LED pin: %port" 
     //% weight=90 
-	//% group="红外" blockGap=8
+    //% group="红外" blockGap=8
 
     export function setIR_pin(port: Ports) {
-		let portss = PortAnalog[port]
+        let portss = PortAnalog[port]
         irLed = portss;
         pins.analogWritePin(irLed, 0);
         pins.analogSetPeriod(irLed, pwmPeriod);
         send_init = true;
     }
-	
-	 /**
-     * send message from IR LED. You must set the message encoding type, send how many times, and the message.
-     */
+
+    /**
+    * send message from IR LED. You must set the message encoding type, send how many times, and the message.
+    */
     //% blockId=HaodaBit_sendMyMessage block="IR send message at: %msg"
     //% weight=100
-	//% group="红外" blockGap=8
-  export function sendMyMessage(msg: number): void {
+    //% group="红外" blockGap=8
+    export function sendMyMessage(msg: number): void {
         if (send_init) {
             //control.inBackground(() => {
-                sendMessage(msg, 1, encodingType.NEC);
+            sendMessage(msg, 1, encodingType.NEC);
             //})
         }
     }
-	
-	
-	function setreg(reg: number, dat: number): void {
+
+
+    function setreg(reg: number, dat: number): void {
         let buf = pins.createBuffer(2);
         buf[0] = reg;
         buf[1] = dat;
@@ -947,7 +947,7 @@ namespace HaodaBit {
      */
     //% blockId="BMP280_GET_PRESSURE" block="BMP280 get pressure"
     //% weight=80
-	//% group="传感器" blockGap=8
+    //% group="传感器" blockGap=8
     export function pressure(): number {
         get();
         return P;
@@ -958,28 +958,28 @@ namespace HaodaBit {
     */
     //% blockId="BMP280_GET_TEMPERATURE" block="BMP280 get temperature"
     //% weight=80
-	//% group="传感器" blockGap=8
+    //% group="传感器" blockGap=8
     export function temperature(): number {
         get();
         return T;
-    } 
+    }
 
     /**
      * power on
     */
     //% blockId="BMP280_POWER_ON" block="BMP280 power On"
     //% weight=80 
-	//% group="传感器" blockGap=8
+    //% group="传感器" blockGap=8
     export function PowerOn() {
         setreg(0xF4, 0x2F)
-    } 
+    }
 
     /**
      * power off
      */
     //% blockId="BMP280_POWER_OFF" block="BMP280 power Off"
     //% weight=80 
-	//% group="传感器" blockGap=8
+    //% group="传感器" blockGap=8
     export function PowerOff() {
         setreg(0xF4, 0)
     }
@@ -993,9 +993,9 @@ namespace HaodaBit {
     export function Address(addr: BMP280_I2C_ADDRESS) {
         BMP280_I2C_ADDR = addr
     }*/
-	
-	
-	function MM32DDDD(): void {
+
+
+    function MM32DDDD(): void {
         i2cWrite(MM32_ADDRESS, MODE1, 0x00)
         setFreq(50);
         initialized = true
@@ -1085,61 +1085,61 @@ namespace HaodaBit {
             motorStop(idx);
         }
     }
-	
-	
-	//% blockId="HaodaBit_set_height" block="set Tracer|%pn|height|%heights"
+
+
+    //% blockId="HaodaBit_set_height" block="set Tracer|%pn|height|%heights"
     //% weight=90
     //% group="传感器" blockGap=8
     export function Lineheight(pn: linechoosedb, heights: number): void {
-		
-		
-/**	
-		
-		
-		i2cWrite_1(N76E003AT20_ADDRESS, 0x03, N76E003AT20_DATA1, N76E003AT20_DATA2);
-		
-		i2cWrite_1(N76E003AT20_ADDRESS, 0x05, N76E003AT20_DATA1, N76E003AT20_DATA2);
 
-		i2cWrite_1(N76E003AT20_ADDRESS, 0x07, N76E003AT20_DATA1, N76E003AT20_DATA2);
 
-		i2cWrite_1(N76E003AT20_ADDRESS, 0x09, N76E003AT20_DATA1, N76E003AT20_DATA2);
+        /**	
+            	
+            	
+                i2cWrite_1(N76E003AT20_ADDRESS, 0x03, N76E003AT20_DATA1, N76E003AT20_DATA2);
+            	
+                i2cWrite_1(N76E003AT20_ADDRESS, 0x05, N76E003AT20_DATA1, N76E003AT20_DATA2);
+        
+                i2cWrite_1(N76E003AT20_ADDRESS, 0x07, N76E003AT20_DATA1, N76E003AT20_DATA2);
+        
+                i2cWrite_1(N76E003AT20_ADDRESS, 0x09, N76E003AT20_DATA1, N76E003AT20_DATA2);
+        
+                i2cWrite_1(N76E003AT20_ADDRESS, 0x13, N76E003AT20_DATA1, N76E003AT20_DATA2);
+        
+                i2cWrite_1(N76E003AT20_ADDRESS, 0x14, N76E003AT20_DATA1, N76E003AT20_DATA2);
+        
+                i2cWrite_1(N76E003AT20_ADDRESS, 0x19, N76E003AT20_DATA1, N76E003AT20_DATA2);
+        
+                i2cWrite_1(N76E003AT20_ADDRESS, 0x16, N76E003AT20_DATA1, N76E003AT20_DATA2);
+        */
 
-		i2cWrite_1(N76E003AT20_ADDRESS, 0x13, N76E003AT20_DATA1, N76E003AT20_DATA2);
 
-		i2cWrite_1(N76E003AT20_ADDRESS, 0x14, N76E003AT20_DATA1, N76E003AT20_DATA2);
 
-		i2cWrite_1(N76E003AT20_ADDRESS, 0x19, N76E003AT20_DATA1, N76E003AT20_DATA2);
-
-		i2cWrite_1(N76E003AT20_ADDRESS, 0x16, N76E003AT20_DATA1, N76E003AT20_DATA2);
-*/
-		
-	
-	
-		i2cWrite(N76E003AT20_ADDRESS, pn, heights);
+        i2cWrite(N76E003AT20_ADDRESS, pn, heights);
 
 
 
     }
-	
-	//% blockId="HaodaBit_read_linead" block="read Tracer|%li|touch black"
+
+    //% blockId="HaodaBit_read_linead" block="read Tracer|%li|touch black"
     //% weight=90
     //% group="传感器" blockGap=8
-	export function readlinead(li: linechooseAD): number { 
-	     let values = i2cRead(N76E003AT20_ADDRESS, li);
-		 return values;
+    export function readlinead(li: linechooseAD): number {
+        let values = i2cRead(N76E003AT20_ADDRESS, li);
+        return values;
 
-	}
-	
-	//% blockId="HaodaBit_read_line" block="Tracer|%li|touch black or not"
+    }
+
+    //% blockId="HaodaBit_read_line" block="Tracer|%li|touch black or not"
     //% weight=90
     //% group="传感器" blockGap=8
-	export function readline(li: linechoose): number { 
-	     let values = i2cRead(N76E003AT20_ADDRESS, li);
-		 return values;
+    export function readline(li: linechoose): number {
+        let values = i2cRead(N76E003AT20_ADDRESS, li);
+        return values;
 
-	}
-	
-	//% shim=sendBufferAsm
+    }
+
+    //% shim=sendBufferAsm
     function sendBuffer(buf: Buffer, pin: DigitalPin) {
     }
 
@@ -1171,8 +1171,8 @@ namespace HaodaBit {
             this.show();
         }
 
-  
-      
+
+
 
         /**
          * Set LED to a given color (range 0-255 for r, g, b). 
@@ -1185,7 +1185,7 @@ namespace HaodaBit {
         //% weight=80
         //% group="RGB" 
         setPixelColor(pixeloffset: number, rgb: number): void {
-		    let pixelrgb = pixeloffset - 1;
+            let pixelrgb = pixeloffset - 1;
             this.setPixelRGB(pixelrgb >> 0, rgb >> 0);
         }
 
@@ -1211,7 +1211,7 @@ namespace HaodaBit {
         clear(): void {
             const stride = this._mode === NeoPixelMode.RGBW ? 4 : 3;
             this.buf.fill(0, this.start * stride, this._length * stride);
-			sendBuffer(this.buf, this.pin);
+            sendBuffer(this.buf, this.pin);
         }
 
 
@@ -1227,7 +1227,7 @@ namespace HaodaBit {
             this.brightness = brightness & 0xff;
         }
 
-      
+
 
         /** 
          * Create a range of LEDs.
@@ -1239,7 +1239,7 @@ namespace HaodaBit {
         //% group="RGB"
         //% blockSetVariable=range
         range(pixelnums: number, length: number): Strip {
-		    let start = pixelnums - 1;
+            let start = pixelnums - 1;
             start = start >> 0;
             length = length >> 0;
             let strip = new Strip();
@@ -1259,14 +1259,14 @@ namespace HaodaBit {
          */
         //% weight=10
         //% parts="neopixel" 
-		
+
         setPin(pin: DigitalPin): void {
             this.pin = pin;
             pins.digitalWritePin(this.pin, 0);
             // don't yield to avoid races on initialization
         }
 
-      
+
 
         private setBufferRGB(offset: number, red: number, green: number, blue: number): void {
             if (this._mode === NeoPixelMode.RGB_RGB) {
@@ -1361,8 +1361,8 @@ namespace HaodaBit {
     //% trackArgs=0,2
     //% blockSetVariable=strip
     export function create(port: Ports, numleds: number): Strip {
-		let pin = PortDigital[port];
-		let mode = 0
+        let pin = PortDigital[port];
+        let mode = 0
         let strip = new Strip();
         let stride = mode === NeoPixelMode.RGBW ? 4 : 3;
         strip.buf = pins.createBuffer(numleds * stride);
@@ -1383,7 +1383,7 @@ namespace HaodaBit {
      */
     //% weight=1 blockGap=8
     //% blockId="HaodaBit_rgb" block="red %red|green %green|blue %blue"
-	//% group="RGB"
+    //% group="RGB"
 
     export function rgb(red: number, green: number, blue: number): number {
         return packRGB(red, green, blue);
@@ -1394,7 +1394,7 @@ namespace HaodaBit {
     */
     //% weight=2 blockGap=8
     //% blockId="HaodaBit_colors" block="%color"
-	//% group="RGB"
+    //% group="RGB"
     export function colors(color: NeoPixelColors): number {
         return color;
     }
@@ -1414,13 +1414,13 @@ namespace HaodaBit {
         let b = (rgb) & 0xFF;
         return b;
     }
-	
-	 /**
-     * clear display content
-     */
+
+    /**
+    * clear display content
+    */
     //% blockId="HaodaBit_TM650_CLEAR" block="4DigitDisplay clear display"
     //% weight=40 blockGap=8
-	//% group="显示"
+    //% group="显示"
     export function digit_clear() {
         dat(0, 0)
         dat(1, 0)
@@ -1437,26 +1437,26 @@ namespace HaodaBit {
     //% blockId="HaodaBit_TM650_DIGIT" block="4DigitDisplay show digit %num|at %bit"
     //% weight=80 blockGap=8
     //% num.max=9 num.min=0
-	//% group="显示"
+    //% group="显示"
     export function digit_digit(num: number, bit: number) {
         let beap = bit - 1;
         dbuf[beap % 4] = _SEG[num % 16]
         dat(beap, _SEG[num % 16])
     }
 
-     function digit1(num: number, bit: number) {
+    function digit1(num: number, bit: number) {
         dbuf[bit % 4] = _SEG[num % 16]
         dat(bit, _SEG[num % 16])
     }
 
-     function digit_on() {
-         cmd(_intensity * 16 + 1)
-     }
+    function digit_on() {
+        cmd(_intensity * 16 + 1)
+    }
 
-     function digit_off() {
-         _intensity = 0
-         cmd(0)
-     }
+    function digit_off() {
+        _intensity = 0
+        cmd(0)
+    }
 
     /**
      * show a number in display
@@ -1464,7 +1464,7 @@ namespace HaodaBit {
      */
     //% blockId="HaodaBit_TM650_SHOW_NUMBER" block="4DigitDisplay show number %num"
     //% weight=100 blockGap=8
-	//% group="显示"
+    //% group="显示"
     export function digit_showNumber(num: number) {
         if (num < 0) {
             dat(0, 0x40) // '-'
@@ -1475,23 +1475,23 @@ namespace HaodaBit {
             let numnn = num % 10
             let numte = Math.idiv(num, 10) % 10
             let numhu = Math.idiv(num, 100) % 10
-            if(numth > 0){
+            if (numth > 0) {
                 digit_digit(numth, 1)
                 digit_digit(numhu, 2)
                 digit_digit(numte, 3)
                 digit_digit(numnn, 4)
 
             }
-            else if(numth = 0 && numhu > 0){
+            else if (numhu > 0) {
                 digit_digit(numhu, 2)
                 digit_digit(numte, 3)
                 digit_digit(numnn, 4)
             }
-            else if(numth = 0 && numhu <= 0 && numte > 0){
+            else if (numte > 0) {
                 digit_digit(numte, 3)
                 digit_digit(numnn, 4)
             }
-            else if (numth = 0 && numhu <= 0 && numte <= 0 && numnn >= 0){
+            else if (numnn >= 0) {
                 digit_digit(numnn, 4)
 
             }
@@ -1527,7 +1527,7 @@ namespace HaodaBit {
      */
     //% blockId="HaodaBit_TM650_SHOW_DP" block="4DigitDisplay show dot point %bit|show %num"
     //% weight=80 blockGap=8
-	//% group="显示"
+    //% group="显示"
     export function digit_showDpAt(bit: number, show: boolean) {
         let baep = bit - 1;
         if (show) dat(baep, dbuf[baep % 4] | 0x80)
