@@ -1212,6 +1212,7 @@ namespace HaodaBit {
             const stride = this._mode === NeoPixelMode.RGBW ? 4 : 3;
             this.buf.fill(0, this.start * stride, this._length * stride);
             sendBuffer(this.buf, this.pin);
+			basic.pause(0.1);
         }
 
 
