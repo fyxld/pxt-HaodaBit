@@ -198,7 +198,7 @@ namespace HaodaBit {
         //% block=blue
         Blue = 0x0000FF,
         //% block=cyan
-        cyan = 0x00FFFF,
+        Cyan = 0x00FFFF,
         //% block=violet
         Violet = 0x8a2be2,
         //% block=purple
