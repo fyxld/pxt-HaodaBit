@@ -16,11 +16,11 @@
     "HaodaBit.NeoPixelColors.Yellow|block": "黄",
     "HaodaBit.NeoPixelColors.Green|block": "緑",
     "HaodaBit.NeoPixelColors.Blue|block": "蓝",
-    "HaodaBit.NeoPixelColors.Indigo|block": "靛蓝",
+    "HaodaBit.NeoPixelColors.Indigo|block": "青",
     "HaodaBit.NeoPixelColors.Violet|block": "紫罗兰",
     "HaodaBit.NeoPixelColors.Purple|block": "紫",
     "HaodaBit.NeoPixelColors.White|block": "白",
-    "HaodaBit.NeoPixelColors.Black|block": "黑",
+    /**"HaodaBit.NeoPixelColors.Black|block": "黑",*/
     "HaodaBit.Ultrasonic|block": "超声波|管脚 %pin",
     "HaodaBit.setREC_pin|block": "设置红外接收在 %myPin",
     "HaodaBit.onReceivedIR|block": "当接收到红外信号时",

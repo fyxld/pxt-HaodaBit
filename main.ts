@@ -197,16 +197,16 @@ namespace HaodaBit {
         Green = 0x00FF00,
         //% block=blue
         Blue = 0x0000FF,
-        //% block=indigo
-        Indigo = 0x4b0082,
+        //% block=cyan
+        cyan = 0x00FFFF,
         //% block=violet
         Violet = 0x8a2be2,
         //% block=purple
         Purple = 0xFF00FF,
         //% block=white
-        White = 0xFFFFFF,
-        //% block=black
-        Black = 0x000000
+        White = 0xFFFFFF
+       /**
+        Black = 0x000000*/
     }
 
     export enum encodingType {
