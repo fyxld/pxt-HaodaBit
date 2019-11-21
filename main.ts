@@ -1259,7 +1259,7 @@ namespace HaodaBit {
          * Set the pin where the neopixel is connected, defaults to P0.
          */
         //% weight=10
-        //% parts="neopixel" 
+       
 
         setPin(pin: DigitalPin): void {
             this.pin = pin;
