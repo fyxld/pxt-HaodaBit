@@ -618,10 +618,10 @@ namespace HaodaBit {
         serial.writeBuffer(buf)
     }
 
-    //% blockId=HaodaBit_mp3_playindex block="MP3 play|index %index"
+    //% blockId=HaodaBit_mp3_playindex block="MP3 play 1"
     //% weight=39
     //% group="音乐" blockGap=8
-    export function MP3PlayIndex(index: number): void {
+    export function MP3PlayIndex(): void {
         let buf = pins.createBuffer(8);
         if (index == 0) {
             index = 1;
@@ -632,7 +632,7 @@ namespace HaodaBit {
         buf[3] = 0x12;
         buf[4] = 0x00;
         buf[5] = 0x00;
-        buf[6] = index;
+        buf[6] = 0x01;
         buf[7] = 0xef;
         serial.writeBuffer(buf)
     }
