@@ -629,7 +629,7 @@ namespace HaodaBit {
         buf[0] = 0x7e;
         buf[1] = 0xff;
         buf[2] = 0x06;
-        buf[3] = 0x03;
+        buf[3] = 0x12;
         buf[4] = 0x00;
         buf[5] = 0x00;
         buf[6] = index;
