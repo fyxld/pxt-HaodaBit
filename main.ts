@@ -618,24 +618,6 @@ namespace HaodaBit {
         serial.writeBuffer(buf)
     }
 	
-	 //% blockId=HaodaBit_mp3_playindex block="MP3 play 1"
-    //% weight=39
-    //% group="音乐" blockGap=8
-    export function MP3PlayIndex(): void {
-        let buf = pins.createBuffer(8);
-     
-        buf[0] = 0x7e;
-        buf[1] = 0xff;
-        buf[2] = 0x06;
-        buf[3] = 0x12;
-        buf[4] = 0x00;
-        buf[5] = 0x00;
-        buf[6] = 0x01;
-        buf[7] = 0xef;
-        serial.writeBuffer(buf)
-    }
-
-/**
     //% blockId=HaodaBit_mp3_playindex block="MP3 play|index %index"
     //% weight=39
     //% group="音乐" blockGap=8
@@ -654,7 +636,7 @@ namespace HaodaBit {
         buf[7] = 0xef;
         serial.writeBuffer(buf)
     }
-*/
+
     //% blockId=HaodaBit_motor_servo block="Servo|%pin|degree|%degree"
     //% weight=100 blockGap=8
     //% degree.min=0 degree.max=270
