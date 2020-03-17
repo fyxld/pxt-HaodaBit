@@ -1,4 +1,4 @@
-pins.analogSetPeriod(AnalogPin.P0, 10000)/*
+/*
 "HaodaBit": "file:../pxt-HaodaBit"
 */
 /**
@@ -1085,9 +1085,18 @@ namespace HaodaBit {
             motorStop(idx);
         }
     }
+	
+	
+	//% blockId="HaodaBit_calibrate" block="Tracer calibrate"
+    //% weight=90
+    //% group="传感器" blockGap=8
+    export function calibratee(): void {
+
+        i2cWrite(N76E003AT20_ADDRESS, 0x15, 1);
+    }
 
 
-    //% blockId="HaodaBit_set_height" block="set Tracer|%pn|height|%heights"
+    //% blockId="HaodaBit_set_height" block="set Tracer|%pn|Grey value|%heights"
     //% weight=90
     //% group="传感器" blockGap=8
     export function Lineheight(pn: linechoosedb, heights: number): void {
@@ -1111,6 +1120,7 @@ namespace HaodaBit {
                 i2cWrite_1(N76E003AT20_ADDRESS, 0x19, N76E003AT20_DATA1, N76E003AT20_DATA2);
         
                 i2cWrite_1(N76E003AT20_ADDRESS, 0x16, N76E003AT20_DATA1, N76E003AT20_DATA2);
+				i2cWrite_1(N76E003AT20_ADDRESS, 0x16, N76E003AT20_DATA1, N76E003AT20_DATA2);
         */
 
 
@@ -1121,7 +1131,7 @@ namespace HaodaBit {
 
     }
 
-    //% blockId="HaodaBit_read_linead" block="read Tracer|%li|touch black"
+    //% blockId="HaodaBit_read_linead" block="read Tracer|%li|Grey value"
     //% weight=90
     //% group="传感器" blockGap=8
     export function readlinead(li: linechooseAD): number {
