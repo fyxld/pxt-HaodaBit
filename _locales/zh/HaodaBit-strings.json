@@ -48,7 +48,7 @@
     "HaodaBit.MotorRun|block": "电机|%index|方向|%Dir|速度|%speed",
     "HaodaBit.motorStop|block": "电机停止|%index",
     "HaodaBit.motorStopAll|block": "停止所有电机",
-	"HaodaBit.calibratee|block": "四路巡线传感器自动校准",
+	"HaodaBit.linecalibrate|block": "四路巡线传感器自动校准",
     "HaodaBit.Lineheight|block": "设置四路巡线传感器|%pn|灰度比较值|%heights",
     "HaodaBit.readlinead|block": "读四路巡线传感器|%li|灰度值 ",
     "HaodaBit.readline|block": "读四路巡线传感器|%li|是否遇到黑线",
