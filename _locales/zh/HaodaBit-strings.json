@@ -1,6 +1,6 @@
 {
-    "HaodaBit.Dir.CW|block": "正转",
-    "HaodaBit.Dir.CCW|block": "反转",
+    "HaodaBit.Dir.CCW|block": "正转",
+    "HaodaBit.Dir.CW|block": "反转",
     "HaodaBit.DHT11Type.TemperatureC|block": "温度(°C)",
     "HaodaBit.DHT11Type.TemperatureF|block": "温度(°F)",
     "HaodaBit.DHT11Type.Humidity|block": "湿度",
