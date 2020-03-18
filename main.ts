@@ -1090,7 +1090,7 @@ namespace HaodaBit {
 	//% blockId="HaodaBit_calibrate" block="Tracer calibrate"
     //% weight=90
     //% group="传感器" blockGap=8
-    export function calibratee(): void {
+    export function linecalibrate(): void {
 
         i2cWrite(N76E003AT20_ADDRESS, 0x15, 1);
     }
