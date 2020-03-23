@@ -1092,7 +1092,10 @@ namespace HaodaBit {
     //% group="传感器" blockGap=8
     export function linecalibrate(): void {
 
-        i2cWrite(N76E003AT20_ADDRESS, 0x15, 1);
+        i2cWrite(N76E003AT20_ADDRESS, 0x21, 0x61);
+        i2cWrite(N76E003AT20_ADDRESS, 0x22, 0x7a);
+        i2cWrite(N76E003AT20_ADDRESS, 0x23, 0x68);
+        i2cWrite(N76E003AT20_ADDRESS, 0x24, 0x65);
     }
 
 
