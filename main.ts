@@ -600,6 +600,10 @@ namespace HaodaBit {
         serial.writeBuffer(buf)
     }
 
+	/**
+     * @param volumn is position, eg: 10
+     */
+	 
     //% blockId=HaodaBit_mp3_volumn block="MP3_volume_set|%volumn"
     //% volumn.min=0 volumn.max=30
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -618,6 +622,10 @@ namespace HaodaBit {
         serial.writeBuffer(buf)
     }
 	
+	/**
+     * @param index is position, eg: 10
+     */
+	 
     //% blockId=HaodaBit_mp3_playindex block="MP3 play|index %index"
     //% weight=39
     //% group="音乐" blockGap=8
@@ -868,6 +876,7 @@ namespace HaodaBit {
 
     /**
     * send message from IR LED. You must set the message encoding type, send how many times, and the message.
+	* @param msg is position, eg: 87
     */
     //% blockId=HaodaBit_sendMyMessage block="IR send message at: %msg"
     //% weight=100
@@ -1034,6 +1043,7 @@ namespace HaodaBit {
 
     /**
      * Runs the motor at the given speed
+	 * @param speed is position, eg: 50
      */
     //% weight=90 blockGap=8
     //% blockId=HaodaBit_MotorRun block="Motor|%index|dir|%Dir|speed|%speed"
@@ -1448,7 +1458,7 @@ namespace HaodaBit {
     /**
      * show a digital in given position
      * @param digit is number (0-15) will be shown, eg: 1
-     * @param bit is position, eg: 0
+     * @param bit is position, eg: 1
      */
     //% blockId="HaodaBit_TM650_DIGIT" block="4DigitDisplay show digit %num|at %bit"
     //% weight=80 blockGap=8
@@ -1540,6 +1550,7 @@ namespace HaodaBit {
      * show Dot Point in given position
      * @param bit is positiion, eg: 0
      * @param show is true/false, eg: true
+	 * @param bit is position, eg: 1
      */
     //% blockId="HaodaBit_TM650_SHOW_DP" block="4DigitDisplay show dot point %bit|show %num"
     //% weight=80 blockGap=8
