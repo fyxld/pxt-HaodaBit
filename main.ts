@@ -623,7 +623,7 @@ namespace HaodaBit {
     }
 	
 	/**
-     * @param index is position, eg: 10
+     * @param index is position, eg: 1
      */
 	 
     //% blockId=HaodaBit_mp3_playindex block="MP3 play|index %index"
@@ -1548,7 +1548,6 @@ namespace HaodaBit {
 
     /**
      * show Dot Point in given position
-     * @param bit is positiion, eg: 0
      * @param show is true/false, eg: true
 	 * @param bit is position, eg: 1
      */
