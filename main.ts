@@ -1191,6 +1191,7 @@ namespace HaodaBit {
          * Set LED to a given color (range 0-255 for r, g, b). 
          * You need to call ``show`` to make the changes visible.
          * @param pixeloffset position of the NeoPixel in the strip
+		 * @param pixeloffset is position, eg: 1
          * @param rgb RGB color of the LED
          */
         //% blockId="HaodaBit_set_pixel_color" block="%strip|set pixel color at %pixeloffset|to %rgb=HaodaBit_colors" 
@@ -1245,7 +1246,8 @@ namespace HaodaBit {
 
         /** 
          * Create a range of LEDs.
-         * @param start offset in the LED strip to start the range
+         * @param start offset in the LED strip to start the range. eg
+		 * @param pixelnums is first leds, eg: 1
          * @param length number of LEDs in the range. eg: 4
          */
         //% weight=89
