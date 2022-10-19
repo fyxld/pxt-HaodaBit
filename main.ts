@@ -645,11 +645,29 @@ namespace HaodaBit {
         serial.writeBuffer(buf)
     }
 
+    //% blockId=HaodaBit_mp3_playfileindex block="MP3 play|%file|index|%index"
+    //% weight=39
+    //% group="音乐" blockGap=8
+    export function MP3PlayFileIndex(file: number ,index: number): void {
+        let buf = pins.createBuffer(8);
+        if (index == 0) {
+            index = 1;
+        }
+        buf[0] = 0x7e;
+        buf[1] = 0xff;
+        buf[2] = 0x06;
+        buf[3] = 0x0F;
+        buf[4] = 0x00;
+        buf[5] = file;
+        buf[6] = index;
+        buf[7] = 0xef;
+        serial.writeBuffer(buf)
+    }	
+
     //% blockId=HaodaBit_motor_servo block="Servo|%pin|degree|%degree"
     //% weight=100 blockGap=8
     //% degree.min=0 degree.max=270
     //% group="执行" name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-
     export function servo(pin: Ports, degree: number): void {
 
         let port = PortAnalog[pin]
